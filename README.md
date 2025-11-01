@@ -4,4 +4,4 @@ Wireless Cyboard keyboard configuration repository template for using ZMK firmwa
 
 ## Default keymap
 The default keymap of this keyboard can be found here:
-![Default Keymap](./keymap-drawer/sofle.svg)
+![Default Keymap](./keymap-drawer/imprint.svg)

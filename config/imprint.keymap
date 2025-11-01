@@ -9,6 +9,47 @@
 / {
     chosen { zmk,matrix-transform = &imprint_number_row; };
 
+    behaviors {
+        macro_emoji_picker: macro_emoji_picker {
+            compatible = "zmk,behavior-macro";
+            label = "macro_emoji_picker";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LG(SPACE))>;
+        };
+
+        macro_screenshot: macro_screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(LS(NUMBER_4)))>;
+            label = "MACRO_SCREENSHOT";
+        };
+
+        zoom_in: zoom_in {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(PLUS)>;
+            label = "ZOOM_IN";
+        };
+
+        zoom_out: zoom_out {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(MINUS)>;
+            label = "ZOOM_OUT";
+        };
+
+        lth: layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <140>;
+            bindings = <&mo>, <&kp>;
+
+            display-name = "Layer-Tap-Hold";
+            quick-tap-ms = <150>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 

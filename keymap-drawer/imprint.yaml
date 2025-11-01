@@ -1,4 +1,4 @@
-layout: {zmk_keyboard: sofle}
+layout: {zmk_keyboard: imprint}
 layers:
   default:
   - '`'
