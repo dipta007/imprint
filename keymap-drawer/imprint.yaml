@@ -1,4 +1,4 @@
-layout: {zmk_keyboard: imprint}
+layout: {zmk_keyboard: imprint, layout_name: imprint_number_row}
 layers:
   default:
   - '`'
@@ -43,132 +43,78 @@ layers:
   - C
   - V
   - B
-  - MUTE
-  - RGB TOG
   - N
   - M
   - ','
   - .
   - /
-  - RIGHT SHIFT
-  - LCTRL
+  - RSHFT
+  - '['
   - LALT
-  - LCMD
-  - {t: BACKSPACE, h: lower}
+  - LALT
+  - ']'
   - RET
+  - DEL
+  - ESC
+  - '`'
+  - BSPC
   - SPACE
-  - {t: BACKSPACE, h: raise}
-  - RGUI
-  - RIGHT ALT
-  - RCTRL
-  lower:
-  - '&studio_unlock'
-  - F10
-  - F11
-  - F12
+  - LGUI
+  - Numpad_Nav_Layer
+  - Keyboard_Control_Layer
+  - CAPS
+  - Keyboard_Control_Layer
+  - Numpad_Nav_Layer
+  Numpad_Nav_Layer:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - /
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '7'
   - '8'
   - '9'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - HOME
+  - UP
+  - END
   - {t: ▽, type: trans}
-  - F7
-  - F8
-  - F9
-  - '['
-  - ']'
-  - '*'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '4'
-  - '5'
-  - '6'
+  - '&mkp RCLK'
+  - '&mkp LCLK'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT
+  - DOWN
+  - RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - F4
-  - F5
-  - F6
-  - '{'
-  - '}'
-  - +
+  - {t: ▽, type: trans}
   - '1'
   - '2'
   - '3'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - F1
-  - F2
-  - F3
-  - (
-  - )
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '-'
-  - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  raise:
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - INS
-  - PSCRN
-  - CMENU
-  - '&zoom_out'
-  - '&zoom_in'
-  - HOME
-  - PG DN
-  - PG UP
-  - END
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LALT
-  - LCTRL
-  - LSHFT
-  - LCMD
-  - CLCK
-  - LEFT
-  - DOWN
-  - UP ARROW
-  - RIGHT
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - UNDO
-  - CUT
-  - COPY
-  - '&macro_screenshot'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '&macro_emoji_picker'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -183,71 +129,144 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  adjust:
+  - {t: ▽, type: trans}
+  Keyboard_Control_Layer:
   - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - POWER
-  - EP TOG
-  - RGB HUD
-  - RGB HUI
-  - RGB SAD
-  - RGB SAI
+  - {t: ▽, type: trans}
+  - RGB TOG
   - RGB EFF
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - POWER
-  - ''
-  - RGB BRD
-  - RGB BRI
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - {t: ▽, type: trans}
-  - EP TOG
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&sys_reset'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RGB TOG
+  - RGB HUI
+  - RGB SAI
+  - RGB BRI
+  - RGB SPI
+  - '&sys_reset'
+  - '&bootloader'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - RGB HUD
+  - RGB SAD
+  - RGB BRD
+  - RGB SPD
+  - '&bootloader'
+  - {t: factory_test, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: factory_test, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Auto_Mouse_Layer:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp RCLK'
+  - '&mkp MCLK'
+  - '&mkp LCLK'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  factory_test: ['2', '3', '4', '5', '6', '7', '8', '9', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0',
+    '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '1', '6', '7', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+    '0', '1', '2']
 combos:
 - p: [31, 32]
   k: ESCAPE
-- p: [36, 49]
+- p: [36, 47]
   k: CAPS
 - p: [19, 20]
   k: '='
@@ -261,5 +280,5 @@ combos:
   k: '}'
 - p: [40, 41]
   k: (
-- p: [44, 45]
+- p: [42, 43]
   k: )
