@@ -113,8 +113,8 @@
 &mt LCTRL ESCAPE  &kp A   &kp S     &kp D     &kp F             &kp G                    &kp H     &kp J          &kp K          &kp L     &kp SEMI  &kp SQT
 &kp LSHFT         &kp Z   &kp X     &kp C     &kp V             &kp B                    &kp N     &kp M          &kp COMMA      &kp DOT   &kp FSLH  &kp RSHFT
                           &kp LBKT  &kp LALT                                                                      &kp LALT       &kp RBKT
-                                              &kp RET           &kp LEFT_ALT  &kp ESC    &kp 3     &kp RIGHT_ALT  &kp SPACE
-                                              &kp LEFT_COMMAND  &mo 1         &mo 2      &to CAPS  &mo 2          &kp BACKSPACE
+                                              &kp RET           &kp LEFT_ALT  &kp ESC    &to 3     &kp RIGHT_ALT  &kp SPACE
+                                              &kp LEFT_COMMAND  &mo 1         &mo 2      &kp CAPS  &mo 2          &kp BACKSPACE
             >;
         };
 
@@ -190,21 +190,19 @@
 };
 
 // right hand trackball configuration
-
 //&trackball_peripheral_listener {
 //    input-processors =
 //        // activate layer 3 within 500ms of the trackball moving,,,
 //        <&zip_temp_layer 3 500>;
 //};
-
 //left hand trackball configuration
 
 &trackball_central_listener {
     input-processors =
-        // multiply sensitivity by 1, divide by 3 (make it slower for scrolling),,,,,,,,,,,
+        // multiply sensitivity by 1, divide by 3 (make it slower for scrolling),,,,,,,,,,,,
         <&zip_xy_scaler 1 7>,
-        // make this trackball output scrolling events by default instead of cursor movement,,,,,,,,,,,
+        // make this trackball output scrolling events by default instead of cursor movement,,,,,,,,,,,,
         <&zip_xy_to_scroll_mapper>,
-        // invert vertical scrolling so that the view moves in the same direction as the top of the trackball.,,,,,,,,,,,
+        // invert vertical scrolling so that the view moves in the same direction as the top of the trackball.,,,,,,,,,,,,
         <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
 };
