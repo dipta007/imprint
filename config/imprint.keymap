@@ -113,8 +113,8 @@
 &mt LCTRL ESCAPE  &kp A   &kp S     &kp D     &kp F             &kp G                    &kp H     &kp J          &kp K          &kp L     &kp SEMI  &kp SQT
 &kp LSHFT         &kp Z   &kp X     &kp C     &kp V             &kp B                    &kp N     &kp M          &kp COMMA      &kp DOT   &kp FSLH  &kp RSHFT
                           &kp LBKT  &kp LALT                                                                      &kp LALT       &kp RBKT
-                                              &kp RET           &kp LEFT_ALT  &kp ESC    &kp CAPS  &kp RIGHT_ALT  &kp SPACE
-                                              &kp LEFT_COMMAND  &mo 1         &mo 2      &to 3     &mo 2          &kp BACKSPACE
+                                              &kp RET           &kp LEFT_ALT  &kp ESC    &kp 3     &kp RIGHT_ALT  &kp SPACE
+                                              &kp LEFT_COMMAND  &mo 1         &mo 2      &to CAPS  &mo 2          &kp BACKSPACE
             >;
         };
 
@@ -191,11 +191,11 @@
 
 // right hand trackball configuration
 
-&trackball_peripheral_listener {
-    input-processors =
-        // activate layer 3 within 300ms of the trackball moving,,,
-        <&zip_temp_layer 3 100>;
-};
+//&trackball_peripheral_listener {
+//    input-processors =
+//        // activate layer 3 within 500ms of the trackball moving,,,
+//        <&zip_temp_layer 3 500>;
+//};
 
 //left hand trackball configuration
 
