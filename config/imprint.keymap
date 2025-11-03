@@ -190,11 +190,12 @@
 };
 
 // right hand trackball configuration
-//&trackball_peripheral_listener {
-//    input-processors =
-//        // activate layer 3 within 400ms of the trackball moving,,,
-//        <&zip_temp_layer 3 400>;
-//};
+&trackball_peripheral_listener {
+    input-processors =
+        // activate layer 3 within 400ms of the trackball moving,,,
+        <&zip_temp_layer 3 400>;
+};
+
 //left hand trackball configuration
 
 &trackball_central_listener {
