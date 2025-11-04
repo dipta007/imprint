@@ -142,13 +142,13 @@
 
         Keyboard_Control_Layer {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3       &bt BT_SEL 4            &trans          &trans               &trans        &trans     &trans  &trans
-&trans      &trans        &trans        &trans        &zoom_out          &zoom_in                &kp HOME        &kp PAGE_DOWN        &kp PAGE_UP   &kp END    &trans  &trans
-&trans      &trans        &trans        &msc SCRL_UP  &msc SCRL_DOWN     &trans                  &kp LEFT_ARROW  &kp DOWN             &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans      &trans        &trans        &trans        &macro_screenshot  &trans                  &trans          &macro_emoji_picker  &trans        &trans     &trans  &trans
-                          &trans        &trans                                                                                        &trans        &trans
-                                                      &trans             &trans        &trans    &trans          &trans               &trans
-                                                      &trans             &trans        &trans    &trans          &trans               &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3       &bt BT_SEL 4            &trans          &trans               &trans        &trans     &trans  &trans
+&trans      &trans        &trans        &trans          &zoom_out          &zoom_in                &kp HOME        &kp PAGE_DOWN        &kp PAGE_UP   &kp END    &trans  &trans
+&trans      &trans        &trans        &msc SCRL_DOWN  &msc SCRL_UP       &trans                  &kp LEFT_ARROW  &kp DOWN             &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans      &trans        &trans        &trans          &macro_screenshot  &trans                  &trans          &macro_emoji_picker  &trans        &trans     &trans  &trans
+                          &trans        &trans                                                                                          &trans        &trans
+                                                        &trans             &trans        &trans    &trans          &trans               &trans
+                                                        &trans             &trans        &trans    &trans          &trans               &trans
             >;
         };
 
@@ -203,7 +203,7 @@
 
 &trackball_peripheral_listener {
     input-processors =
-        // activate layer 3 within 500ms of the trackball moving,,,,,,,,
+        // activate layer 3 within 500ms of the trackball moving,,,,,,,,,
         <&zip_temp_layer 3 500>;
 };
 
@@ -211,10 +211,10 @@
 
 &trackball_central_listener {
     input-processors =
-        // multiply sensitivity by 1, divide by 3 (make it slower for scrolling),,,,,,,,,,,,,,,,,,
+        // multiply sensitivity by 1, divide by 3 (make it slower for scrolling),,,,,,,,,,,,,,,,,,,
         <&zip_xy_scaler 1 7>,
-        // make this trackball output scrolling events by default instead of cursor movement,,,,,,,,,,,,,,,,,,
+        // make this trackball output scrolling events by default instead of cursor movement,,,,,,,,,,,,,,,,,,,
         <&zip_xy_to_scroll_mapper>,
-        // invert vertical scrolling so that the view moves in the same direction as the top of the trackball.,,,,,,,,,,,,,,,,,,
+        // invert vertical scrolling so that the view moves in the same direction as the top of the trackball.,,,,,,,,,,,,,,,,,,,
         <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
 };
