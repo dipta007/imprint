@@ -53,7 +53,7 @@ layers:
   - RIGHT
   - UP ARROW
   - DOWN ARROW
-  - RET
+  - BACKSPACE
   - TAB
   - ESC
   - CAPS
@@ -64,7 +64,7 @@ layers:
   - Numpad_Nav_Layer
   - Auto_Mouse_Layer
   - {t: Keyboard_Control_Layer, h: Keyboard_Control_Layer}
-  - BACKSPACE
+  - RET
   Numpad_Nav_Layer:
   - {t: ▽, type: trans}
   - F10
@@ -183,7 +183,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Alt+BSPC
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
