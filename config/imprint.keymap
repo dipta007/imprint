@@ -140,7 +140,7 @@
 &sk LSHFT         &kp Z   &kp X     &kp C      &kp V         &kp B                        &kp N     &kp M    &kp COMMA      &kp DOT         &kp FSLH  &sk RSHFT
                           &kp LEFT  &kp RIGHT                                                                &kp UP_ARROW   &kp DOWN_ARROW
                                                &kp BACKSPACE &kp TAB           &kp ESC    &kp CAPS  &kp TAB  &kp SPACE
-                                               &kp RET       &sk LGUI          &mo 1      &mo 3     &lsk 2 2 &sk LALT
+                                               &sk LALT      &sk LGUI          &mo 1      &mo 3     &lsk 2 2 &kp RET
             >;
         };
 

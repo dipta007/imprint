@@ -59,12 +59,12 @@ layers:
   - CAPS
   - TAB
   - SPACE
-  - RET
+  - {t: LALT, h: sticky}
   - {t: LGUI, h: sticky}
   - Numpad_Nav_Layer
   - Auto_Mouse_Layer
   - {t: Keyboard_Control_Layer, h: Keyboard_Control_Layer}
-  - {t: LALT, h: sticky}
+  - RET
   Numpad_Nav_Layer:
   - {t: ▽, type: trans}
   - F10
