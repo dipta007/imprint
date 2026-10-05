@@ -53,18 +53,18 @@ layers:
   - RIGHT
   - UP ARROW
   - DOWN ARROW
-  - SPACE
+  - BACKSPACE
   - TAB
   - ESC
   - CAPS
   - TAB
-  - BACKSPACE
-  - {t: LALT, h: sticky}
-  - {t: Keyboard_Control_Layer, h: Keyboard_Control_Layer}
-  - Numpad_Nav_Layer
-  - Auto_Mouse_Layer
+  - SPACE
   - RET
   - {t: LGUI, h: sticky}
+  - Numpad_Nav_Layer
+  - Auto_Mouse_Layer
+  - {t: Keyboard_Control_Layer, h: Keyboard_Control_Layer}
+  - {t: LALT, h: sticky}
   Numpad_Nav_Layer:
   - {t: ▽, type: trans}
   - F10
@@ -190,10 +190,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Auto_Mouse_Layer:
   - {t: ▽, type: trans}
@@ -323,10 +323,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
 combos:
 - p: [31, 32]

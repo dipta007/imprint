@@ -139,8 +139,8 @@
 &mt LCTRL ESCAPE  &kp A   &kp S     &kp D      &kp F         &kp G                        &kp H     &kp J    &kp K          &kp L           &kp SEMI  &kp SQT
 &sk LSHFT         &kp Z   &kp X     &kp C      &kp V         &kp B                        &kp N     &kp M    &kp COMMA      &kp DOT         &kp FSLH  &sk RSHFT
                           &kp LEFT  &kp RIGHT                                                                &kp UP_ARROW   &kp DOWN_ARROW
-                                               &kp SPACE     &kp TAB           &kp ESC    &kp CAPS  &kp TAB  &kp BACKSPACE
-                                               &sk LALT      &lsk 2 2          &mo 1      &mo 3     &kp RET  &sk LGUI
+                                               &kp BACKSPACE &kp TAB           &kp ESC    &kp CAPS  &kp TAB  &kp SPACE
+                                               &kp RET       &sk LGUI          &mo 1      &mo 3     &lsk 2 2 &sk LALT
             >;
         };
 
