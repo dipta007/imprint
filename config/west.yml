@@ -9,11 +9,12 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: v0.3.0
       import: app/west.yml
     - name: zmk-keyboards
       remote: Cyboard-DigitalTailor
-      revision: main
+      # zmk-keyboards main as of 2026-09-29; bump deliberately, layout changes can move keys
+      revision: c6c0419ca3cfbba607b5a1f078c6506cda8aeeb5
       import: config/west.yml
   self:
     path: config
