@@ -215,6 +215,10 @@
     };
 };
 
+&sk {
+    quick-release;
+};
+
 // right hand trackball configuration
 
 &trackball_peripheral_listener {
