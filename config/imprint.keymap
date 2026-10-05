@@ -69,6 +69,11 @@
             key-positions = <31 32>;
         };
 
+        enter {
+            bindings = <&kp RET>;
+            key-positions = <44 45>;
+        };
+
         caps_lock {
             bindings = <&kp CAPS>;
             key-positions = <36 47>;
