@@ -123,8 +123,8 @@
 &mt LCTRL ESCAPE  &kp A   &kp S     &kp D      &kp F         &kp G                        &kp H     &kp J    &kp K          &kp L           &kp SEMI  &kp SQT
 &kp LSHFT         &kp Z   &kp X     &kp C      &kp V         &kp B                        &kp N     &kp M    &kp COMMA      &kp DOT         &kp FSLH  &kp RSHFT
                           &kp LEFT  &kp RIGHT                                                                &kp UP_ARROW   &kp DOWN_ARROW
-                                               &kp RET       &kp TAB           &kp ESC    &kp CAPS  &kp TAB  &kp SPACE
-                                               &kp LEFT_ALT  &kp LEFT_COMMAND  &mo 1      &mo 3     &mo 2    &kp BACKSPACE
+                                               &kp BACKSPACE &kp TAB           &kp ESC    &kp CAPS  &kp TAB  &kp SPACE
+                                               &kp LEFT_ALT  &kp LEFT_COMMAND  &mo 1      &mo 3     &mo 2    &kp RET
             >;
         };
 
@@ -147,7 +147,7 @@
 &trans      &trans        &trans        &msc SCRL_DOWN  &msc SCRL_UP       &trans                  &kp LEFT_ARROW  &kp DOWN             &kp UP_ARROW  &kp RIGHT  &trans  &trans
 &trans      &trans        &trans        &trans          &macro_screenshot  &trans                  &trans          &macro_emoji_picker  &trans        &trans     &trans  &trans
                           &trans        &trans                                                                                          &trans        &trans
-                                                        &trans             &trans        &trans    &trans          &trans               &trans
+                                                        &kp LA(BSPC)       &trans        &trans    &trans          &trans               &trans
                                                         &trans             &trans        &trans    &trans          &trans               &trans
             >;
         };
