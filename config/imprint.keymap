@@ -48,17 +48,6 @@
             display-name = "Layer-Tap-Hold";
             quick-tap-ms = <150>;
         };
-
-        lsk: layer_sticky {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&mo>, <&sl>;
-
-            display-name = "Layer-Sticky-Hold";
-            quick-tap-ms = <150>;
-        };
     };
 
     combos {
@@ -67,11 +56,6 @@
         vim_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <31 32>;
-        };
-
-        enter {
-            bindings = <&kp RET>;
-            key-positions = <44 45>;
         };
 
         caps_lock {
@@ -137,10 +121,10 @@
 &kp GRAVE         &kp N1  &kp N2    &kp N3     &kp N4        &kp N5                       &kp N6    &kp N7   &kp N8         &kp N9          &kp N0    &kp MINUS
 &kp TAB           &kp Q   &kp W     &kp E      &kp R         &kp T                        &kp Y     &kp U    &kp I          &kp O           &kp P     &kp BSLH
 &mt LCTRL ESCAPE  &kp A   &kp S     &kp D      &kp F         &kp G                        &kp H     &kp J    &kp K          &kp L           &kp SEMI  &kp SQT
-&sk LSHFT         &kp Z   &kp X     &kp C      &kp V         &kp B                        &kp N     &kp M    &kp COMMA      &kp DOT         &kp FSLH  &sk RSHFT
+&kp LSHFT         &kp Z   &kp X     &kp C      &kp V         &kp B                        &kp N     &kp M    &kp COMMA      &kp DOT         &kp FSLH  &kp RSHFT
                           &kp LEFT  &kp RIGHT                                                                &kp UP_ARROW   &kp DOWN_ARROW
                                                &kp BACKSPACE &kp TAB           &kp ESC    &kp CAPS  &kp TAB  &kp SPACE
-                                               &sk LALT      &sk LGUI          &mo 1      &mo 3     &lsk 2 2 &kp RET
+                                               &kp LEFT_ALT  &kp LEFT_COMMAND  &mo 1      &mo 3     &mo 2    &kp RET
             >;
         };
 
@@ -213,10 +197,6 @@
             then-layer = <5>;
         };
     };
-};
-
-&sk {
-    quick-release;
 };
 
 // right hand trackball configuration
