@@ -37,7 +37,7 @@ layers:
   - L
   - ;
   - ''''
-  - {t: LSHFT, h: sticky}
+  - LSHFT
   - Z
   - X
   - C
@@ -48,7 +48,7 @@ layers:
   - ','
   - .
   - /
-  - {t: RSHFT, h: sticky}
+  - RSHFT
   - LEFT
   - RIGHT
   - UP ARROW
@@ -59,11 +59,11 @@ layers:
   - CAPS
   - TAB
   - SPACE
-  - {t: LALT, h: sticky}
-  - {t: LGUI, h: sticky}
+  - LEFT ALT
+  - LEFT COMMAND
   - Numpad_Nav_Layer
   - Auto_Mouse_Layer
-  - {t: Keyboard_Control_Layer, h: Keyboard_Control_Layer}
+  - Keyboard_Control_Layer
   - BACKSPACE
   Numpad_Nav_Layer:
   - {t: ▽, type: trans}
@@ -331,8 +331,6 @@ layers:
 combos:
 - p: [31, 32]
   k: ESCAPE
-- p: [44, 45]
-  k: RET
 - p: [36, 47]
   k: CAPS
 - p: [19, 20]
